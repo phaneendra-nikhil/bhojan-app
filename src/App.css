@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400;700&family=Paytone+One&family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: poppins;
+    text-decoration: none;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+:root{
+    --main-bg: #FFB200;
+    --second-bg: #FFCB42;
+}
+/******************************************************************************************************/
+@media(max-width : 700px){
+
+    .nav-logo i{
+        display: none;
+    }
+    .header-title{
+        padding: 10px;
+    }
+    .search-bar{
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+    .search-bar input{
+        width: fit-content;
+    }
+    .nav-contact button{
+        margin-left: 2rem;
+        padding: .5rem 1rem;
+    }
+    .search-bar button{
+        font-size: .8rem;
+    }
+    .contact-card{
+        flex-direction: column;
+    }
+    .card-1 h3{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .card-1 button{
+        margin-top: 1rem;
+        padding: .4rem .7rem;
+    }
+    .card-2 form{
+        margin-top: 0;
+    }
+    .footer-section{
+        flex-direction: column;
+    }
+    .container{
+        margin: 0;
+        padding: 6% !important ;
+        
+    }
+    
+}
+/********************************************************************************************/
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10% 10px;
+    background: var(--main-bg);
+    height: 15vh;
+}
+.nav-logo h1 button{
+    background: transparent;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2rem;
+}
+.nav-contact button{
+    background-color: #9b700a;
+    padding: .7rem 2rem;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 20px;
+    transition: all .50s ease;
+}
+.nav-contact button:hover{
+    background-color: #654805;
+}
+/********************************************************************************************************/
+header{
+    background-color: var(--main-bg);
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    color: #fff;
+}
+.header-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-title h2{
+    margin-top: 2rem;
+}
+#caption-1{
+    font-size: 1rem;
+    margin-bottom: 2.3rem;
+}
+.paragraph p{
+    font-weight: 600;
+}
+#caption-2{
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+}
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.search-bar input{
+    width: 600px;
+    padding: .9rem;
+    border: none;
+    border-radius: 40px ;
+    margin-top: 2rem;
+    box-shadow: 0 7px 20px #654805;
+}
+.search-bar input::placeholder{
+   color: var(--main-bg);
+   font-weight: 700;
+}
+.search-bar input:hover{
+    border: none;
+}
+.container{
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px ,1fr));
+    grid-gap: 3rem;
+    padding: 10px 2% 20px ;
+}
+.indexContainer{
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0; 
+}
+
+/*********************************************************************************/
+
+/***********************************************************************************/
+.contact-section{
+    padding: 10px 5% 20px;
+    height: fit-content;
+}
+.contact-section h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #30302f;
+    margin-bottom: 1.7rem;
+}
+.contact-card{
+    display: flex;
+    gap: 2rem;
+    box-shadow: 0 10px 20px #a9a9a8;
+    margin-bottom: 3rem;
+}
+.card-1,.card-2{
+    padding: 20px 4% 30px;
+}
+.card-1 button{
+    margin-top: 1rem;
+    border-radius: 12px;
+    border: none;
+    background-color: #FFB200;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1rem;
+    padding: .6rem 2rem;
+}
+.card-1 h3{
+    font-size: 1.8rem;
+}
+.card-1 p{
+    margin-top: 1rem;
+}
+.card-2 form{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-2 input{
+    padding: .4rem .7rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--main-bg);
+}
+.card-2 textarea{
+    padding: .6rem .9rem;
+    margin-top: .3rem;
+    border-radius: 7px;
+    border: none;
+    background-color: var(--main-bg);
+}
+.card-2 button{
+    border-radius: 7px;
+    margin-top: .3rem;
+    width: 70px;
+    padding: .3rem .4rem;
+    border: none;
+    background-color: #FFB200;
+    color: #fff;
+    
+}
+.card-2 input::placeholder, .card-2 textarea::placeholder{
+    color: #ffff;
+    font-weight: 700;
+}
+/******************************************************************************************************/
+.footer-section{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    background: var(--main-bg);
+    padding: 40px 5% 20px;
+}
+.footer-1 h2{
+    font-size: 2rem;
+    color: #ffff;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: .4rem;
+    margin-bottom: 1rem;
+}
+.footer-1 li a{
+    color: #fff;
+    transition: all .50s ease;
+}
+.footer-1 a:hover{
+    color: #30302f;
+}
+.sub-footer-1 ul{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.sub-footer-1  a{
+   color: #fff;
+    padding: .5rem .7rem;
+    border-radius: 50%;
+    background-color: #654805;
+   
+}
+.footer-2 h2{
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-underline-offset: .4rem;
+    margin-bottom: 1rem;
+
+}
+.sub-footer-2 ul{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.sub-footer-2  a{
+   color: #fff;
+    padding: .5rem .7rem;
+    border-radius: 50%;
+    background-color: #654805;
+   
+}
+/**********************************************************************************************/
+.copy-right p{
+    background-attachment: fixed;
+    text-align: center;
+    background-color: var(--main-bg);
+    font-weight: 600;
+    padding: 12px 7% 20px;
+    height: fit-content;
+    color: #fff;
+}
+.copy-right a{
+    text-decoration: underline;
+}

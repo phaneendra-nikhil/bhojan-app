@@ -1,0 +1,40 @@
+.card{
+    width: 200px;
+    border-radius: 1rem;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    padding: 5px;
+    height: fit-content;
+    
+    transition: all .50s ease;
+    
+}
+.card:hover{
+    transform: scale(1.045);
+    box-shadow: 0 10px 20px rgb(128, 104, 9);
+}
+.card-img{
+    width: 100%;
+    border-radius: 1rem;
+    width: 190px;
+}
+.card h3{
+    color: black;
+}
+.view-btn{
+    padding: .5rem .8rem;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: #FFB200;
+    margin-left: 9rem;
+    margin-top: .4rem;
+    cursor: pointer;
+    transition: all .50s ease;
+}
+.view-btn:hover{
+    color: #fff;
+    background-color: #503904;
+}
+
