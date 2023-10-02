@@ -1,2 +1,2 @@
 # React + Vite
-![logo](bhojan.png)
+![logo](bhojan-app.png)
